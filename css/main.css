@@ -1221,7 +1221,7 @@ pre code {
   transition: all 0.2s ease-in-out;
 }
 .links-of-author a::before {
-  background: #85ff1c;
+  background: #2d88e5;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2507,4 +2507,41 @@ header.header {
   .sidebar-active .footer-fixed {
     left: 320px;
   }
+}
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 响应式网格布局 */
+  gap: 25px; /* 卡片间距 */
+  margin-top: 30px;
+}
+.home-card {
+  background-color: #fff; /* 卡片背景 */
+  border-radius: 12px; /* 圆角 */
+  padding: 25px; /* 内边距 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04); /* 阴影 */
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  text-decoration: none; /* 去掉链接下划线 */
+  color: inherit; /* 继承文字颜色 */
+  display: block; /* 使整个卡片可点击 */
+}
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08), 0 4px 8px rgba(0,0,0,0.06);
+}
+.home-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1d1d1f; /* 标题颜色 */
+  font-size: 1.3em;
+}
+.home-card p {
+  font-size: 0.95em;
+  color: #6e6e73; /* 描述文字颜色 */
+  line-height: 1.5;
+}
+.home-card .card-icon {
+/* 可选：卡片图标 */
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #007aff; /* 图标颜色 */
 }
